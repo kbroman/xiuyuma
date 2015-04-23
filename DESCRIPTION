@@ -1,0 +1,9 @@
+Package: DigitsCount
+Version: 1.1
+Author: Xiuyu Ma
+Maintainer: Xiuyu Ma	<xiuyuma@stat.wisc.edu>
+License: GPL (>= 2)
+Title: DigitsCount
+Description: Firstdigitscount
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr

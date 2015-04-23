@@ -1,0 +1,25 @@
+---
+title: "digitscount: count # of first digits"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{count # of first digits}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8](inputenc)
+---
+
+Test vignette for this test package.
+
+Load library.
+
+```{r loadlibrary}
+library("DigitsCount")
+```
+
+Count the number of first digits for the input data.
+ith component of return vector represents the number of the input data having first numeric digit to be i. 
+
+```{r count}
+v<-c(0,0,0,1.2,3.2,4.5,-0.02,-0.12)
+digitscount(v)
+```
+
