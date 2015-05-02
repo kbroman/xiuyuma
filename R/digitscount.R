@@ -14,25 +14,11 @@
 #' @export
 digitscount<-function(v){
   if(is.vector(v)&&is.numeric(v)){
-    n<-length(v)
-    count<-rep(0,9)
-    for(i in 1:n){
-      if(v[i]!=0){
-      if(abs(v[i])>1){
-        while(abs(v[i]/10)>=1){
-          v[i]<-v[i]/10
-        }
-        count[floor(abs(v[i]))%%10]=count[floor(abs(v[i]))%%10]+1
-      }
-      else{
-        while(abs(v[i])<1){
-          v[i]<-v[i]*10
-        }
-        count[floor(abs(v[i]))%%10]=count[floor(abs(v[i]))%%10]+1
-      }
-      }
-      
-    }
+     ch <- as.character(v)
+    ch <- gsub('[\\.0\\-]', '', ch)
+    firstdig <- as.numeric(substr(ch, 1, 1))
+    count<-table( factor(firstdig, levels=1:9) )
+
   }
   else{
     print("invalid input")
