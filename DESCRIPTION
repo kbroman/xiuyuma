@@ -1,9 +1,10 @@
 Package: DigitsCount
+Type: Package
+Date: 2015-05-02
 Version: 1.1
 Author: Xiuyu Ma
 Maintainer: Xiuyu Ma	<xiuyuma@stat.wisc.edu>
 License: GPL (>= 2)
 Title: DigitsCount
 Description: Firstdigitscount
-Suggests: knitr, rmarkdown
-VignetteBuilder: knitr
+Suggests: testthat
