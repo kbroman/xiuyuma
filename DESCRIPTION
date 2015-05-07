@@ -7,4 +7,5 @@ Maintainer: Xiuyu Ma	<xiuyuma@stat.wisc.edu>
 License: GPL (>= 2)
 Title: DigitsCount
 Description: Firstdigitscount
-Suggests: testthat
+Suggests: testthat, knitr, rmarkdown
+VignetteBuilder: knitr
